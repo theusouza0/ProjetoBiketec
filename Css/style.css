@@ -1,0 +1,100 @@
+
+/*Estilização geral do site*/
+a{
+    text-decoration: none /*decoração do texto*/
+}
+.botao{
+    color: #FEC63E;
+    border: 3px solid #FEC63E;
+    letter-spacing: .1em;
+    text-transform:uppercase;
+    padding: 8px 30px; 
+    transition: 0.5s;  /*Transição do hover de saída*/
+}
+.botao:hover{
+    border: 4px solid #000;
+    padding: 9px 31px;
+    color: #000;
+    font-size: 110%;
+    transition: 0.5s; /*Transição do hover de entrada*/
+}
+
+/* Header*/
+header{
+    background-color:#FEC63E;
+    padding: 10px 0px;
+    border-bottom: 2px solid black;
+}
+/*Menu*/
+.header_menu{
+    display: inline-block; /*colodar os elementos em linha*/
+    margin-top: 25px;
+    text-align: right;
+}
+.header_menu ul li{
+    display: inline-block;
+}
+.header_menu li a{
+    color: black;
+    font-weight: bold; /*negrito*/
+    font-size: 15px;
+    padding: 15px; /*Cria um espaçamento entre os elementos ou borda*/
+    text-transform: uppercase; /*Deixar os caracteres em caixa alta*/
+    transition: 0.2s;
+}
+.header_menu li a:hover{/*Cursor do mouse*/
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0); /*sobra - Lado - Baixo - Borrar*/
+    transition: 0.2s;
+}
+
+/* Introdução */
+.intro{
+    height: 400px;
+    background-image: url('../Img/bg.jpg'); /*Para colocar imagem de fundo*/
+    background-repeat: no-repeat; /*Para a imagem não se repetir*/
+    background-size: cover; /*Expandiu a imagem*/
+    background-position: top;
+    text-align: center;
+    padding-top: 80px;
+}
+.intro h1{
+    text-transform: uppercase; /*Deixar os caracteres em caixa alta*/
+    color:white;
+    font-size: 40px;
+    text-shadow: 2px 2px 20px black; /*sobra - Lado - Baixo - Borrar*/
+    font-weight: bold; /*negrito*/
+    transition: 0.5s;
+}
+.intro h1:hover{
+    text-transform: uppercase; /*Deixar os caracteres em caixa alta*/;
+    font-size: 40px;
+    text-shadow: 2px 2px 40px rgb(255, 255, 255); /*sobra - Lado - Baixo - Borrar*/
+    font-weight: bold; /*negrito*/
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+blockquote{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold; /*negrito*/
+    width: 23%;
+    margin: 40px auto; /* 40px para top e bottom e Auto para right e left*/
+    letter-spacing: .1em; /*Espaçamento entre as letras*/
+    line-height: 15px; /*Altura da linha*/
+
+}
+blockquote cite{
+    text-transform: uppercase;  /*Deixar os caracteres em caixa alta*/
+    line-height: 40px;
+}
+
+p::before, p::after{
+    content: "";
+    width: 120px;
+    height: 4px;
+    display: block;
+    background-color: #fff;
+    margin: 15px auto;
+}   
